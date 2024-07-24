@@ -1,6 +1,4 @@
-﻿using Microsoft.Build.Framework;
-
-namespace LeaveManagement.Web.Contracts
+﻿namespace LeaveManagement.Web.Contracts
 {
     public interface IGenericRepository<T> where T : class
     {
