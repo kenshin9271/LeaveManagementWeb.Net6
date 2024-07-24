@@ -49,7 +49,7 @@
 </form>
 
 <form id="allocationForm" asp-action="AllocateLeave">
-    <input type="hidden" id="leaveTypeId" name="Id" />
+    <input type="hidden" id="leaveTypeIdAllocate" name="Id" />
 </form>
 
 @section Scripts{
@@ -85,7 +85,7 @@
                     if (confirm) {
                         var btn = $(this);
                         var id = btn.data("id");
-                        $('#leaveTypeId').val(id);
+                        $('#leaveTypeIdAllocate').val(id);
                         $('#allocationForm').submit();
                     }
                 });
